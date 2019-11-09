@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tema1-Calendar</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="card-header" id="dateinfo"></h3>
+        <table class="table table-bordered table-responsive-sm" id="calendar">
+
+            <thead class="thead-light">
+                <th>Luni</th>
+                <th>Marti</th>
+                <th>Miercuri</th>
+                <th>Joi</th>
+                <th>Vineri</th>
+                <th>Sambata</th>
+                <th>Duminica</th>
+    
+            </thead>
+
+            <tbody id="calendar-body"></tbody>
+            </table>
+        
+            <div class="buttons">
+            <button type="button" class="btn btn-primary" onclick ="prevMonth()">Inapoi</button>
+            <button type="button" class="btn btn-primary" onclick="nextMonth()">Inainte</button>
+            </div>
+        
+            <form class="form-group">
+                <label for="month">Alegeti o data: </label>
+                <select class="form-control col-sm-4" name="Luna" id="month" onchange="updateCalendar()">
+                    <option value=0>Ian</option>
+                    <option value=1>Feb</option>
+                    <option value=2>Mar</option>
+                    <option value=3>Apr</option>
+                    <option value=4>Mai</option>
+                    <option value=5>Iun</option>
+                    <option value=6>Iul</option>
+                    <option value=7>Aug</option>
+                    <option value=8>Sep</option>
+                    <option value=9>Oct</option>
+                    <option value=10>Nov</option>
+                    <option value=11>Dec</option>
+                </select>
+        
+                <select name="Anul" class="form-control col-sm-4" id="year" onchange="updateCalendar()">
+                    <option value=1999>1999</option>
+                    <option value=2000>2000</option>
+                    <option value=2001>2001</option>
+                    <option value=2002>2002</option>
+                    <option value=2003>2003</option>
+                    <option value=2004>2004</option>
+                    <option value=2005>2005</option>
+                    <option value=2006>2006</option>
+                    <option value=2007>2007</option>
+                    <option value=2008>2008</option>
+                    <option value=2009>2009</option>
+                    <option value=2010>2010</option>
+                    <option value=2011>2011</option>
+                    <option value=2012>2012</option>
+                    <option value=2013>2013</option>
+                    <option value=2014>2014</option>
+                    <option value=2015>2015</option>
+                    <option value=2016>2016</option>
+                    <option value=2017>2017</option>
+                    <option value=2018>2018</option>
+                    <option value=2019>2019</option>
+                    <option value=2020>2020</option>
+                    <option value=2021>2021</option>
+                    <option value=2022>2022</option>
+                    <option value=2023>2023</option>
+                    <option value=2024>2024</option>
+                    <option value=2025>2025</option>
+                </select>
+                
+        
+            </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
